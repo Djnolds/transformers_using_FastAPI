@@ -13,12 +13,9 @@ class Product(BaseModel):
     name: str
     notes: str
 
-@app.get("/ok")
-async def ok_endpoint():
-    return {"message": "ok"}
-
+# Define your routes
 @app.get("/hello")
-async def hello_endpoint(name: str = 'World'):
+async def testing(name: str = 'My World'):
     return {"message": f"Hello, {name}!"}
 
 @app.post("/orders")
