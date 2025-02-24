@@ -5,8 +5,8 @@ headers = {
     'accept': 'application/json'
 }
 params = {
-    'product': 'laptop',
-    'units': '1'
+    'product': '',
+    'units': ''
 }
 
 response = requests.post(url, headers=headers, data=json.dumps(params))
